@@ -2,7 +2,7 @@ package pl.spring.core.services;
 
 import org.springframework.stereotype.Service;
 import pl.spring.data.model.User;
-import pl.spring.data.repositories.CustomerRepository;
+import pl.spring.data.repositories.UserRepository;
 import pl.spring.dto.LoggedUserDTO;
 
 import javax.transaction.Transactional;
@@ -11,7 +11,7 @@ import javax.transaction.Transactional;
 @Transactional
 public class UserService {
 
-    private CustomerRepository userRepository;
+    private UserRepository userRepository;
 
     public boolean checkCredentials(String login, String password) {
         boolean existsUser = userRepository.checkIfUserExists(login, password);
