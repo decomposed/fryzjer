@@ -20,12 +20,12 @@ Wszystko not null
 tabela 'customers' reprezentująca klientów. Na początek zainicjować, może z 5 klientów
 Kolumny:
 - id
-- first_name
-- last_name
-- telephone_number
-- visit_date_time
-- assigned_hairdresser
-- comments
+- first_name <not null>
+- last_name <not null>
+- telephone_number <not null>
+- visit_date_time <null>
+- assigned_hairdresser <null>
+- comments <null>
 
 Trzy ostatnie kolumny inicjowane nullem przy tworzeniu nowego klienta, wypełniane w momencie umówienia wizyty.
 Pozostałe kolumny not null.
