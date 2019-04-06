@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import pl.spring.data.model.User;
 
-public interface CustomerRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     @Query(nativeQuery = true,
             value = "SELECT CASE WHEN count(*) >= 1 THEN 'true' ELSE 'false' END " +
