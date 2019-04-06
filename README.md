@@ -26,6 +26,7 @@ Kolumny:
 - visit_date_time
 - assigned_hairdresser
 - comments
+
 Trzy ostatnie kolumny inicjowane nullem przy tworzeniu nowego klienta, wypełniane w momencie umówienia wizyty.
 Pozostałe kolumny not null.
 
